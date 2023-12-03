@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -18,7 +20,7 @@
   width: 18vh;
 }
 .justify-content-center {
-  background-color: rgb(252, 207, 60);
+  background-color: #97c9f7;
   font-weight: bolder;
   color: black;
 
