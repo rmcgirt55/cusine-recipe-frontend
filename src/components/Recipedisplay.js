@@ -57,8 +57,8 @@ function Recipedisplay() {
       <Container className="recipe-container">
         <div className="row">
           {recipes?.map((recipe) => (
-            <div className="col-md-4">
-              <Card key={recipe.id}>
+            <div className="col-md-4 py-2 px-2">
+              <Card key={recipe.id} style={{ borderRadius: "25px" }}>
                 <div
                   className="recipe-box view"
                   onClick={() => handleRecipeClick(recipe)}
@@ -68,8 +68,12 @@ function Recipedisplay() {
                     src={recipe.image}
                     alt={recipe.recipename}
                   />
-                  <h4 className="recipe-title">{recipe.recipename}</h4>
-                  <button>Details </button>
+                  <div className="text-center py-2">
+                    <h2 className="recipe-title text-center">
+                      {recipe.recipename}
+                    </h2>
+                    <button>Details </button>
+                  </div>
                 </div>
 
                 <Modal show={showModal} onHide={handleCloseModal}>
