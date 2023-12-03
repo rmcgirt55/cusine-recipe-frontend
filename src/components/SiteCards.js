@@ -16,6 +16,7 @@ function SiteCards() {
               variant="tabs"
               defaultActiveKey="#first"
               className="justify-content-center"
+              style={{ backgroundColor: "#97c9f7" }}
             >
               <Nav.Item>
                 <Nav.Link as={Link} to="/about">
@@ -31,12 +32,13 @@ function SiteCards() {
           </Card.Header>
         </Card>
       ) : (
-        <Card>
+        <Card className="mx-2" style={{ flexGrow: 1 }}>
           <Card.Header>
             <Nav
               variant="tabs"
               defaultActiveKey="#first"
               className="justify-content-center"
+              style={{ backgroundColor: "#97c9f7" }}
             >
               <Nav.Item>
                 <Nav.Link as={Link} to="/about">
