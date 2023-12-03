@@ -20,7 +20,7 @@ code {
 }
 
 .recipe-container .view{
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   text-align: left;
 }
 
@@ -29,7 +29,7 @@ code {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-bottom: 5px solid #E48F45;
+  border-bottom: 5px solid #97c9f7;
 }
 
 .recipe-container .view h4{
@@ -45,7 +45,7 @@ code {
 
 .recipe-container .view button {
   font-size: 18px;
-  color: #E48F45;
+  color: #97c9f7;
   font-weight: 600;
   text-decoration: underline;
   text-align: left;
@@ -89,7 +89,7 @@ code {
 }
 
 .image{
-  background: linear-gradient(to right, white 30%, #FFD28F 30% 100%);
+  background: linear-gradient(to right, white 30%, #97c9f7 30% 100%);
   padding-right: 0;
  
 }
@@ -126,12 +126,12 @@ code {
 }
 
 .modal-body h4{
-  color: #E48F45;
+  color: #97c9f7;
 }
 
 .modal-body .owner{
   padding: 8px 15px;
-  background: #E1AA74;
+  background: #97c9f7;
   color: #fff;
   border-radius: 5px;
   display: inline-block;
@@ -140,11 +140,12 @@ code {
 
 .modal-body .card-text div:not(:first-child) b{
   font-size: 22px;
-  color: #F4BF96;
+  color: #97c9f7;
   display: block;
   width: 300px;
-  border-bottom: 3px solid #cfa27f;
+  border-bottom: 3px solid #97c9f7;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .modal-body .card-text div:not(:first-child){
@@ -177,6 +178,7 @@ code {
   font-size: larger;
 font-style: italic;
   font-family: cursive;
+  cursor: pointer;
 }
 
 .intro-main{
