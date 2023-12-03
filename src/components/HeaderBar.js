@@ -54,7 +54,11 @@ function HeaderBar() {
     loginActions = (
       <>
         <div>
-          <button className="btn-cusine login" onClick={logout}>
+          <button
+            className="btn-cusine"
+            style={{ width: "100%", marginLeft: "0px" }}
+            onClick={logout}
+          >
             Logout
           </button>
           <h6>Logged in as {currentUser.username}</h6>
@@ -66,7 +70,7 @@ function HeaderBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container className="header-main">
-        <Navbar.Brand className="text-wrap">
+        <Navbar.Brand className="text-wrap" onClick={() => navigate("/")}>
           <b className="branding">Hangry Nomster</b>
         </Navbar.Brand>
         <SiteCards />
