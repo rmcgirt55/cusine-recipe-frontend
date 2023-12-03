@@ -166,6 +166,19 @@ code {
 .btn-cusine:hover {
   background-color: #ffc107;
 }
+
+.btn-cusine-update{
+    border: none;
+      background-color:#ffc107 ;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 500;
+      margin: 5px;
+}
+.btn-cusine-update:hover {
+  background-color: yellow;
+}
+
 .header-main{
   display: flex;
     justify-content: space-between;
