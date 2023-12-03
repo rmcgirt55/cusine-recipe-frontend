@@ -33,6 +33,6 @@ jobs:
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: "af1318cb-de55-4b19-8ad1-12041f03559b"
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "frontend-cusiner-app"
           heroku_email: "rmcgirt55@gmail.com"
