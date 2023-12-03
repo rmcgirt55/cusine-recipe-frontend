@@ -1,36 +1,53 @@
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import Card from "react-bootstrap/Card";
 
 function NewRecipe() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const data = location?.state?.data;
 
   const [recipe, setRecipe] = useState({
-    recipename: "",
-    image: "",
-    cuisines: "",
-    difficulty: "",
-    preptime: "",
-    cooktime: "",
-    ingredients: "",
-    directions: "",
-    description: "",
+    recipename: data?.recipename || "",
+    image: data?.image || "",
+    cuisines: data?.cuisines || "",
+    difficulty: data?.difficulty || "",
+    preptime: data?.preptime || "",
+    cooktime: data?.cooktime || "",
+    ingredients: data?.ingredients || "",
+    directions: data?.directions || "",
+    description: data?.description || "",
   });
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const response = await fetch(
-      `https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/create_recipe/`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(recipe),
-      }
-    );
-    const data = await response.json();
+    let response;
+    if (data) {
+      response = await fetch(
+        "https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/edit_recipe/",
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ...recipe, id: data?.id }),
+        }
+      );
+    } else {
+      response = await fetch(
+        `https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/create_recipe/`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(recipe),
+        }
+      );
+    }
+
+    const result = await response.json();
     navigate("/recipes");
   }
 
@@ -39,7 +56,9 @@ function NewRecipe() {
       <Card className="my-5">
         <Card.Body>
           <main>
-            <h1 className="text-center">Add a New Recipe</h1>
+            <h1 className="text-center">
+              {data ? "Update a New Recipe" : "Add a New Recipe"}
+            </h1>
             <form onSubmit={handleSubmit}>
               <div className="form-group ">
                 <label htmlFor="recipename">Recipe Name</label>
@@ -160,7 +179,7 @@ function NewRecipe() {
               </div>
               <div className="d-flex justify-content-center align-items-center">
                 <button className="btn-cusine my-3 text-center" type="submit">
-                  Add Recipe
+                  {data ? "Update Recipe" : "Add Recipe"}
                 </button>
               </div>
             </form>
