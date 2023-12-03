@@ -19,20 +19,44 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
-      - name: Build app
+      - name: Build project
         run: npm run build
 
-  deploy:
-    runs-on: ubuntu-latest
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
 
+  deploy:
+    name: Deploy
     needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12
+      - name: Download artifact
+        uses: actions/download-artifact@v2
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "frontend-cusiner-app"
-          heroku_email: "rmcgirt55@gmail.com"
+          name: production-files
+          path: ./build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+  # deploy:
+  #   runs-on: ubuntu-latest
+
+  #   needs: build
+
+  #   steps:
+  #     - name: Deploy to Heroku
+  #       uses: akhileshns/heroku-deploy@v3.12.12
+  #       with:
+  #         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+  #         heroku_app_name: "frontend-cusiner-app"
+  #         heroku_email: "rmcgirt55@gmail.com"
