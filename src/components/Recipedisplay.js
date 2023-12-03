@@ -9,8 +9,10 @@ import { useNavigate, useParams } from "react-router";
 function Recipedisplay() {
   const { id } = useParams();
   const [recipes, setRecipes] = useState(null);
+  const [record, setRecord] = useState(0);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +33,7 @@ function Recipedisplay() {
       }
     };
     fetchData();
-  }, []);
+  }, [record]);
 
   const handleRecipeClick = (recipe) => {
     setSelectedRecipe(recipe);
@@ -49,6 +51,33 @@ function Recipedisplay() {
       </div>
     );
   }
+  //   const handleUpdate = async (UserDetail) => {
+  //     const response = await fetch(
+  //       "https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/edit_recipe",
+  //       {
+  //         method: "PUT",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(UserDetail),
+  //       }
+  //     );
+  //     setRecord((prev) => prev + 1);
+  //   };
+
+  const handleDelete = async (DeleteId) => {
+    const response = await fetch(
+      `https://django-cusine-app-0001-8571ec4d7bc6.herokuapp.com/delete_recipe/`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id: DeleteId }),
+      }
+    );
+    setRecord((prev) => prev + 1);
+  };
 
   return (
     <>
@@ -136,6 +165,26 @@ function Recipedisplay() {
                     </div>
                   </Modal.Body>
                 </Modal>
+                {recipes ? (
+                  <div className="d-flex justify-content-center">
+                    <button
+                      className="btn-cusine my-3 text-center"
+                      onClick={() => handleDelete(recipe ? recipe.id : "")}
+                    >
+                      Delete
+                    </button>
+                    <button
+                      className="btn-cusine-update my-3 text-center"
+                      onClick={() =>
+                        navigate("/newRecipe", { state: { data: recipe } })
+                      }
+                    >
+                      Update
+                    </button>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </Card>
             </div>
           ))}
