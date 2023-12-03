@@ -95,7 +95,10 @@ function Recipes() {
                       <Accordion.Header>{menu.recipename}</Accordion.Header>
                       <Accordion.Body>
                         <div className="container my-5">
-                          <div className="card row flex-row-reverse">
+                          <div
+                            className="card row flex-row-reverse"
+                            style={{ borderRadius: "25px" }}
+                          >
                             <img
                               className="col-lg-4 card-img-end img-fluid p-0"
                               src={menu.image}
