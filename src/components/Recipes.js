@@ -152,6 +152,7 @@ function Recipes() {
   return (
     <div className="text-center py-5">
       <input
+        style={{ width: "700px" }}
         type="text"
         placeholder=" Search by recipe name"
         onChange={(e) => setQuery(e.target.value)}
