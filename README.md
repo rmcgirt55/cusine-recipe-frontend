@@ -82,6 +82,22 @@ Additionally, the application is still in need of several essential functionalit
 
 Resolving these bugs and implementing the pending functionalities will not only enhance the overall user experience but also ensure smoother navigation and interaction within the platform. These improvements align with the application's goal of providing a user-friendly and feature-rich environment for sharing, exploring, and contributing to a diverse collection of recipes.
 
+API (http://localhost:5000)
+Method	Path	Purpose
+GET	/	Receipe Dashboard
+GET	/Recipe Index of all Receipe added to the program.
+POST	/Receipe	Add a new Receipe to the program.
+GET	/Receipe/:receipeId	Details about a particular receipe.
+PUT	/Receipe/:receipeId	Update a particular receipe.
+DELETE	/receipe/:receipeId	Delete a particular receipe.
+App (http://localhost:3000)
+Path	Component	Purpose
+/	About.js	Home page
+/sign-up	users/SignUpForm.js	Form for creating a new user
+/receipe	Receipe/Recipedisplay.js	List of receipes
+/receipe/new	receipe/Receipe.js	Form for creating a new receipes
+/receipe/:receipeId	 receipe/SirCards.js	
+
 ## Application Link
 
 The deployed version of the Recipe App can be accessed [here](https://culinary-front-e03d74ce4209.herokuapp.com/).
