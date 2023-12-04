@@ -109,5 +109,5 @@ Feel free to adjust the formatting or add more details as needed for your README
 
 ## Application Link
 
-The deployed version of the Recipe App can be accessed [here](https://culinary-front-e03d74ce4209.herokuapp.com/).
+The deployed version of the Recipe App can be accessed [here](h[ttps://culinary-front-e03d74ce4209.herokuapp.com/](https://frontend-cusiner-app-f11a7786b2e3.herokuapp.com/about)https://frontend-cusiner-app-f11a7786b2e3.herokuapp.com/about).
 
