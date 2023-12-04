@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cusine-recipe-frontend/static/css/main.fd6d92c2.css",
+    "main.js": "/cusine-recipe-frontend/static/js/main.331f2a76.js",
+    "static/media/colorfulpeppers.png": "/cusine-recipe-frontend/static/media/colorfulpeppers.e589f653c42cdd3a6e66.png",
+    "index.html": "/cusine-recipe-frontend/index.html",
+    "main.fd6d92c2.css.map": "/cusine-recipe-frontend/static/css/main.fd6d92c2.css.map",
+    "main.331f2a76.js.map": "/cusine-recipe-frontend/static/js/main.331f2a76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd6d92c2.css",
+    "static/js/main.331f2a76.js"
+  ]
+}
