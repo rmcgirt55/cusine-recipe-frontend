@@ -4,6 +4,10 @@
 
 Welcome to the Recipe Book App! This application allows users to discover, share, and manage their favorite recipes. Below, you'll find information on how to use the application, the technologies used in its development, and details on any outstanding bugs or unfinished functionality.
 
+## Inspiration
+
+The genesis of DishDiscovery, an inventive application enabling users to share and contribute their recipes, found its roots in Richard's deep-seated passion for culinary exploration and gastronomic diversity. Richard, an avid food enthusiast and aspiring chef, was inspired by his extensive travels, diverse culinary experiences, and interactions with various cultures. Throughout his journeys, he observed the absence of a cohesive platform where individuals could compile and exchange their unique recipes. Motivated by this realization, Richard envisioned DishDiscovery as a comprehensive solution—an online haven for culinary enthusiasts, chefs, and passionate home cooks to converge and curate a repository of diverse recipes. His aspiration was to foster a collaborative space that celebrated cultural richness, encouraged culinary creativity, and facilitated the sharing of cherished family recipes and innovative cooking techniques. DishDiscovery, under Richard's guidance, evolved into an inclusive community-driven application that not only documented recipes but also acted as a melting pot of culinary traditions, inviting individuals worldwide to contribute, explore, and revel in the joy of discovering new flavors. Richard's vision for DishDiscovery stemmed from his unwavering belief in the unifying power of food, aspiring to connect people through a shared love for cooking and the celebration of delicious meals from different corners of the globe.
+
 ## How to Use the Application
 
 ### Registration
