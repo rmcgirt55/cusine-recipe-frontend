@@ -71,7 +71,7 @@ function HeaderBar() {
     <Navbar bg="light" expand="lg">
       <Container className="header-main">
         <Navbar.Brand className="text-wrap" onClick={() => navigate("/")}>
-          <b className="branding">Hangry Nomster</b>
+          <b className="branding">DishDiscovery</b>
         </Navbar.Brand>
         <SiteCards />
         {loginActions}

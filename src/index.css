@@ -156,7 +156,7 @@ code {
 
 .btn-cusine{
   border: none;
-    background-color: yellow;
+    background-color: #1184ed;
     padding: 10px;
     border-radius: 10px;
     font-weight: 500;
@@ -164,19 +164,19 @@ code {
 }
 
 .btn-cusine:hover {
-  background-color: #ffc107;
+  background-color: rgb(151, 201, 247);
 }
 
 .btn-cusine-update{
     border: none;
-      background-color:#ffc107 ;
+      background-color:rgb(151, 201, 247); ;
       padding: 10px;
       border-radius: 10px;
       font-weight: 500;
       margin: 5px;
 }
 .btn-cusine-update:hover {
-  background-color: yellow;
+  background-color: #1184ed;
 }
 
 .header-main{
