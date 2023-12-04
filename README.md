@@ -60,7 +60,7 @@ Users can view all the recipes available on the platform.
 1. Explore the homepage to find a list of recipes.
 2. Click on any recipe to view its details.
 
-## Technologies Used
+## Technologies Used Out ##outstanding bugs or unfinished functionality
 
 - **Backend:**
   - Python
@@ -73,6 +73,14 @@ Users can view all the recipes available on the platform.
 
 - **Deployment:**
   - Heroku
+
+ ##outstanding bugs or unfinished functionality
+ 
+    In addressing the current state of the application, there are a couple of notable bugs that require immediate attention. One particular bug involves the disappearance of the "Add Recipe" functionality from the header when a user is logged in and then navigates through various links within the platform. This issue seems to persist because the logged-in session data remains active even after opening new links, resulting in the absence of the "Add Recipe" option. A potential solution might involve implementing a mechanism that automatically logs off the user upon closing the tab or navigating away from the site, ensuring a refreshed session upon return.
+
+Additionally, the application is still in need of several essential functionalities that remain unfinished. For instance, a prominent feature on the development roadmap involves enabling videos to play when users hover over different recipe pictures. Integrating this interactive element could significantly enhance the user experience, providing engaging multimedia content as they explore various recipes. Furthermore, there's an incomplete aspect regarding the addition of a recipe owner's name when a new recipe is submitted. Automating this process to include the user's name in the recipe owner field upon submission would streamline the process, attributing ownership and giving due credit to the contributor seamlessly.
+
+Resolving these bugs and implementing the pending functionalities will not only enhance the overall user experience but also ensure smoother navigation and interaction within the platform. These improvements align with the application's goal of providing a user-friendly and feature-rich environment for sharing, exploring, and contributing to a diverse collection of recipes.
 
 ## Application Link
 
