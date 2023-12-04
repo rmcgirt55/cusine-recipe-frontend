@@ -82,21 +82,30 @@ Additionally, the application is still in need of several essential functionalit
 
 Resolving these bugs and implementing the pending functionalities will not only enhance the overall user experience but also ensure smoother navigation and interaction within the platform. These improvements align with the application's goal of providing a user-friendly and feature-rich environment for sharing, exploring, and contributing to a diverse collection of recipes.
 
-API (http://localhost:5000)
-Method	Path	Purpose
-GET	/	Receipe Dashboard
-GET	/Recipe Index of all Receipe added to the program.
-POST	/Receipe	Add a new Receipe to the program.
-GET	/Receipe/:receipeId	Details about a particular receipe.
-PUT	/Receipe/:receipeId	Update a particular receipe.
-DELETE	/receipe/:receipeId	Delete a particular receipe.
-App (http://localhost:3000)
-Path	Component	Purpose
-/	About.js	Home page
-/sign-up	users/SignUpForm.js	Form for creating a new user
-/receipe	Receipe/Recipedisplay.js	List of receipes
-/receipe/new	receipe/Receipe.js	Form for creating a new receipes
-/receipe/:receipeId	 receipe/SirCards.js	
+Certainly! Here's the information formatted into a table for a README file:
+
+### API Endpoints (http://localhost:5000)
+
+| Method | Path               | Purpose                                    |
+|--------|--------------------|--------------------------------------------|
+| GET    | /                  | Recipe Dashboard                           |
+| GET    | /Recipe            | Index of all Recipes added to the program |
+| POST   | /Recipe            | Add a new Recipe to the program            |
+| GET    | /Recipe/:recipeId  | Details about a particular recipe          |
+| PUT    | /Recipe/:recipeId  | Update a particular recipe                  |
+| DELETE | /recipe/:recipeId  | Delete a particular recipe                 |
+
+### App Endpoints (http://localhost:3000)
+
+| Path          | Component                | Purpose                                   |
+|---------------|--------------------------|-------------------------------------------|
+| /             | About.js                 | Home page                                 |
+| /sign-up      | users/SignUpForm.js      | Form for creating a new user               |
+| /recipe       | Recipe/RecipeDisplay.js  | List of recipes                           |
+| /recipe/new   | recipe/Recipe.js         | Form for creating a new recipe             |
+| /recipe/:recipeId | recipe/SirCards.js   | Display details of a specific recipe      |
+
+Feel free to adjust the formatting or add more details as needed for your README file.
 
 ## Application Link
 
