@@ -81,7 +81,8 @@ function Recipedisplay() {
 
   return (
     <>
-      <h1 className="text-center">Recipes</h1>
+      <h1 class="text-center recipe-title">Recipes</h1>
+
 
       <Container className="recipe-container">
         <div className="row">

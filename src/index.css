@@ -161,10 +161,12 @@ code {
     border-radius: 10px;
     font-weight: 500;
     margin: 5px;
+    color: white;
 }
 
 .btn-cusine:hover {
   background-color: rgb(151, 201, 247);
+  color: black;
 }
 
 .btn-cusine-update{
@@ -176,12 +178,13 @@ code {
       margin: 5px;
 }
 .btn-cusine-update:hover {
-  background-color: #1184ed;
+  background-color: white;
 }
 
 .header-main{
   display: flex;
     justify-content: space-between;
+    color: white;
 }
 .navigation-main{
   flex-grow: 1;

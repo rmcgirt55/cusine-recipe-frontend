@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import background from "../backgroundImages/colorfulpeppers.png";
+
 import API_URL from "../constants";
 import Card from "react-bootstrap/Card";
 

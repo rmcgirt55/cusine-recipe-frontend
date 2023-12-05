@@ -134,8 +134,16 @@
 }
 
 
-.nutrtion{
-  color: rgb(242, 91, 9)
+.recipe-title {
+  color: white; /* Set text color to white for contrast */
+  background-color: #3498db; /* Light blue background color */
+  padding: 20px; /* Add padding to the title */
+  text-align: center; /* Center-align the text */
+  font-size: 2.5em; /* Adjust the font size as needed */
+  font-weight: bold; /* Set font weight to bold for emphasis */
+  border-radius: 10px; /* Add rounded corners to the title */
+  text-transform: uppercase; /* Convert text to uppercase */
+  position: relative; /* Set position to relative for pseudo-element */
 }
 
 .aboutbg {
