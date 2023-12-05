@@ -18,16 +18,20 @@ function SiteCards() {
               className="justify-content-center"
               style={{ backgroundColor: "#97c9f7" }}
             >
-              <Nav.Item>
-                <Nav.Link as={Link} to="/about">
-                  About
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/recipes">
-                  Recipes
-                </Nav.Link>
-              </Nav.Item>
+            <Nav.Item>
+            
+  <Nav.Link as={Link} to="/about" style={{ color: 'white', fontSize: '2em', fontWeight: 'bold', textDecoration: 'underline', animation: 'pulse 1s infinite' }}>
+    About
+  </Nav.Link>
+</Nav.Item>
+<Nav.Item>
+  <Nav.Link as={Link} to="/recipes" style={{ color: 'white', fontSize: '2em', fontWeight: 'bold', textDecoration: 'underline', animation: 'pulse 1s infinite' }}>
+    Recipes
+  </Nav.Link>
+</Nav.Item>
+
+
+
             </Nav>
           </Card.Header>
         </Card>

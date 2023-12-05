@@ -258,3 +258,8 @@ input:focus {
 img{
   border-radius: 25px;
 }
+
+.NavLinkCustom {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  color: white; /* Set text color to white */
+}
