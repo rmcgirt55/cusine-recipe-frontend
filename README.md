@@ -60,7 +60,7 @@ Users can view all the recipes available on the platform.
 1. Explore the homepage to find a list of recipes.
 2. Click on any recipe to view its details.
 
-## Technologies Used Out ##outstanding bugs or unfinished functionality
+## Technologies Used Out 
 
 - **Backend:**
   - Python
